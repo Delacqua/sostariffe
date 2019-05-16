@@ -1,0 +1,67 @@
+/* ------- LAYOUT --------*/
+
+body {
+  position: relative;
+  @include fontNormaleG;
+  
+  background: $sfondoColore;
+
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  min-width: 320px;
+  overflow-y: scroll;
+}
+
+.contentArea {
+  width: $contentSize;
+  width: 70%;
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: auto;
+
+  @include flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+@media screen and (max-width: 680px) {
+  .contentArea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contentArea {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+main,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  width: 100%;
+  height: 765px; 
+}
+
+.headerSfondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1440px;
+  height: 765px;
+  background-image: url(../img/sfondoheader.jpg);
+  background-repeat: no-repeat;
+  background-position: left top; 
+}

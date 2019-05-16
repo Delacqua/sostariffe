@@ -1,0 +1,28 @@
+/* ------- LAYOUT --------*/
+
+.jumbotron {
+    background-image: url(../img/sfondoheader.jpg);
+    background-color: white;
+
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.containerCustom {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.card {
+  -webkit-box-shadow:  3px -3px 25px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow:  3px -3px 25px 0px rgba(0,0,0,0.1);
+  box-shadow: 3px -3px 25px 0px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 57px;
+  height: 49px;
+}

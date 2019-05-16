@@ -1,0 +1,499 @@
+/* -------------- Reset  ------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* -------------- Reset  ------------------ */
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */ }
+
+/* ------- LAYOUT --------*/
+.jumbotron {
+  background-image: url(../img/sfondoheader.jpg);
+  background-color: white;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.containerCustom {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.card {
+  -webkit-box-shadow: 3px -3px 25px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px -3px 25px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px -3px 25px 0px rgba(0, 0, 0, 0.1); }
+
+.card img {
+  width: 57px;
+  height: 49px; }
+
+/* ------- LAYOUT --------*/
+body {
+  position: relative;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  min-width: 320px;
+  overflow-y: scroll; }
+
+.contentArea {
+  width: 90%;
+  width: 70%;
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+@media screen and (max-width: 680px) {
+  .contentArea {
+    width: 90%; } }
+@media screen and (max-width: 320px) {
+  .contentArea {
+    width: 100%;
+    padding: 5px; } }
+main,
+footer {
+  flex-shrink: 0; }
+
+main {
+  flex: 1; }
+
+header {
+  width: 100%;
+  height: 765px; }
+
+.headerSfondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1440px;
+  height: 765px;
+  background-image: url(../img/sfondoheader.jpg);
+  background-repeat: no-repeat;
+  background-position: left top; }
+
+/* ------- header --------*/
+/* ------- main --------*/
+h1, h2, h3 {
+  font-family: arial, sans-serif;
+  font-size: 2em;
+  line-height: 1.4em;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h4 {
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+p {
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.selected {
+  color: #4286f4; }
+
+.cards {
+  position: relative;
+  display: -webkit-flex;
+  display: flex; }
+
+.card {
+  flex: 1 0 21%; }
+
+@media screen and (max-width: 680px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  .card {
+    flex: 1 0 40%; } }
+@media screen and (max-width: 320px) {
+  .card {
+    flex: 1 0 90%; } }
+/* ------- index --------*/
+.headerContainer {
+  width: 100%;
+  height: 80vh; }
+
+.header {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .header h1, .header h2 {
+    font-family: arial, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .header h1 {
+    margin-top: 8%;
+    color: #4286f4; }
+  .header h2 {
+    text-align: justify; }
+    .header h2 span {
+      font-weight: bolder; }
+  .header a {
+    margin-top: 20px;
+    width: 50%;
+    color: white; }
+
+@media screen and (max-width: 680px) {
+  .header {
+    width: 80%; } }
+@media screen and (max-width: 320px) {
+  .header {
+    width: 100%; } }
+.servizi {
+  margin-top: 1em; }
+  .servizi h4 {
+    font-weight: bolder;
+    color: #171717; }
+  .servizi p {
+    margin-top: 1em; }
+
+.cards {
+  margin-top: 2em; }
+  .cards .card {
+    margin-right: 1em; }
+    .cards .card img {
+      margin: auto;
+      margin-top: 1em; }
+    .cards .card h5 {
+      font-size: 0.9em;
+      font-weight: bold; }
+    .cards .card p {
+      font-size: 0.9em;
+      color: #767676; }
+
+.comment {
+  margin-top: 4em; }
+  .comment h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #171717; }
+  .comment p {
+    margin-top: 1em; }
+
+.comments {
+  margin-top: 2em;
+  margin-bottom: 6em; }
+  .comments .card {
+    margin-bottom: 1em;
+    background: url(../img/next.png);
+    background-repeat: no-repeat;
+    background-position: 95% 10%; }
+    .comments .card a {
+      text-decoration: none;
+      cursor: pointer; }
+
+.cardComment {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 20px; }
+  .cardComment div:nth-child(1) {
+    margin-right: 20px; }
+  .cardComment div:nth-child(2) {
+    margin-top: 20px; }
+  .cardComment h5 {
+    color: #171717; }
+  .cardComment h6 {
+    font-size: 0.8em;
+    color: #646464; }
+  .cardComment .riga {
+    margin-top: 5px;
+    width: 100px;
+    height: 1px;
+    background: #72a5f7; }
+
+.footer {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center; }
+  .footer p {
+    margin-right: 8px; }
+
+/* ------- gestione --------*/
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../img/lente.png");
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px; }
+
+.input-group {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.risultati {
+  margin-top: 20px; }
+
+.elencoProdotti {
+  margin-top: 1em;
+  margin-bottom: 50px; }
+  .elencoProdotti li {
+    margin-top: 1em;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    padding: 20px; }
+    .elencoProdotti li div {
+      width: 70%; }
+    .elencoProdotti li div:nth-child(2) {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      width: 30%; }
+  .elencoProdotti h5 {
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .elencoProdotti p {
+    margin-top: 5px;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666666; }
+  .elencoProdotti a {
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 70%;
+    color: white;
+    cursor: pointer; }
+
+/* ------- ristoccagio --------*/
+.elencoProdotti2 {
+  margin-top: 1em;
+  margin-bottom: 50px; }
+  .elencoProdotti2 li {
+    margin-top: 1em;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    padding: 20px; }
+    .elencoProdotti2 li div {
+      width: 33%; }
+    .elencoProdotti2 li div:nth-child(3) {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative; }
+  .elencoProdotti2 h5 {
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .elencoProdotti2 p {
+    margin-top: 5px;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666666; }
+    .elencoProdotti2 p span {
+      font-weight: bolder;
+      font-size: 1em;
+      color: black; }
+  .elencoProdotti2 a {
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1em;
+    color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 70%;
+    color: white;
+    cursor: pointer; }
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  font-family: arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1em;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative; }
+  .modal-header p,
+  .modal-body p,
+  .modal-footer p {
+    color: #999999; }
+  .modal-header span,
+  .modal-body span,
+  .modal-footer span {
+    color: #1a1a1a; }
+
+.modal-header h5 {
+  color: #4286f4;
+  font-size: 2em; }
+
+/* ----------- Button  ------------------*/
+.btn-cta {
+  color: white !important;
+  background-color: #7ed321;
+  border-color: #6661b9; }
+
+.btn-cta:hover,
+.btn-cta:focus,
+.btn-cta:active,
+.btn-cta.active,
+.open .dropdown-toggle.btn-cta {
+  color: white;
+  background-color: #9cff30;
+  border-color: #534eb1; }
+
+.btn-cta:active,
+.btn-cta.active,
+.open .dropdown-toggle.btn-cta {
+  background-image: none; }
+
+.btn-cta .badge {
+  color: white;
+  background-color: #9cff30; }
+
+.btn-search {
+  color: white !important;
+  background-color: #f5a623;
+  border-color: #6661b9; }
+
+.btn-search:hover,
+.btn-search:focus,
+.btn-search:active,
+.btn-search.active,
+.open .dropdown-toggle.btn-search {
+  color: white;
+  background-color: #fdc25f;
+  border-color: #534eb1; }
+
+.btn-search:active,
+.btn-search.active,
+.open .dropdown-toggle.btn-search {
+  background-image: none; }
+
+.btn-search .badge {
+  color: white;
+  background-color: #fdc25f; }
+
+/*# sourceMappingURL=style.css.map */
